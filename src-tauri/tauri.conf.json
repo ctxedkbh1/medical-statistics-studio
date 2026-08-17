@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "医学统计学学习助手",
+  "productName": "医学统计研习室",
   "version": "0.1.0",
   "identifier": "com.medstats.learningassistant",
   "build": {
@@ -11,7 +11,7 @@
   },
   "app": {
     "windows": [{
-      "title": "医学统计学学习助手",
+      "title": "医学统计研习室",
       "width": 1440,
       "height": 920,
       "minWidth": 1024,
