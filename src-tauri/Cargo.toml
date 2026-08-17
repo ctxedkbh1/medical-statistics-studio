@@ -1,0 +1,26 @@
+[package]
+name = "medstats-learning-assistant"
+version = "0.1.0"
+description = "医学统计学学习助手"
+authors = ["MedStats"]
+edition = "2021"
+
+[lib]
+name = "medstats_learning_assistant_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+strip = true
+
